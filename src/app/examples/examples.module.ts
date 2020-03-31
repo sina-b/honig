@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { LandingComponent } from './landing/landing.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SignupComponent } from './signup/signup.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
     imports: [
@@ -14,9 +12,7 @@ import { SignupComponent } from './signup/signup.component';
         NgbModule,
     ],
     declarations: [
-        LandingComponent,
-        SignupComponent,
-        ProfileComponent
+        ImpressumComponent
     ]
 })
 export class ExamplesModule { }
