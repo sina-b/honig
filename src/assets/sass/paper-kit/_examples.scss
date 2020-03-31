@@ -130,6 +130,8 @@
 }
 .owner{
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 .owner .avatar{
     padding: 15px;
