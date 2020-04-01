@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
-import * as $ from "jquery";
 
 @Component({
   selector: 'app-carousel',
