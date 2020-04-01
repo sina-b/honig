@@ -89,6 +89,97 @@
                     </ng-template>
                 </ngb-carousel>
             </div>
+            <div id="juni" class="card page-carousel ghost">
+                <h5>
+                    Zeit der ersten Honigernte
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_juni; index as i">
+                        <img [src]="asset[0]" alt="assets_juni[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_juni[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="juli" class="card page-carousel ghost">
+                <h5>
+                    Es ist Sommer! Die Bienen haben sehr viel Honig gesammelt, jetzt kann zum zweiten mal der Honig ausgeschleudert werden
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_juli; index as i">
+                        <img [src]="asset[0]" alt="assets_juli[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_juli[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="august" class="card page-carousel ghost">
+                <h5>
+                    Nach dem der Honig entnommen ist, müssen die Bienen jetzt gefüttert werden
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_august; index as i">
+                        <img [src]="asset[0]" alt="assets_august[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_august[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="september" class="card page-carousel ghost">
+                <h5>
+                    Der Honig muss in die Gläser
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_september; index as i">
+                        <img [src]="asset[0]" alt="assets_september[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_september[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="oktober" class="card page-carousel ghost">
+                <h5>
+                    Es wird langsam Herbst
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_oktober; index as i">
+                        <img [src]="asset[0]" alt="assets_oktober[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_oktober[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="november" class="card page-carousel ghost">
+                <h5>
+                    Vorbereitungen für den Weihnachtsmarkt, es gibt viel zu tun
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_november; index as i">
+                        <img [src]="asset[0]" alt="assets_november[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_november[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+            <div id="dezember" class="card page-carousel ghost">
+                <h5>
+                    Bienen im Dezember
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_dezember; index as i">
+                        <img [src]="asset[0]" alt="assets_dezember[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_dezember[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
         </div>
     </div>
 </div>

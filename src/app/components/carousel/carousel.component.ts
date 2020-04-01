@@ -81,7 +81,64 @@ export class CarouselComponent implements OnInit {
     ['/assets/img/weissdornbluete.jpg', 'Weißdornblüte'],
     ['/assets/img/weinstock.jpg', 'Weinstock']
   ]
+
+  assets_juni = [
+    ['/assets/img/wabe_schleuder.jpg', 'Entdeckelte Wabe in der Schleuder'],
+    ['/assets/img/sieb.jpg', 'Der Honig wird zwei Mal gesiebt'],
+    ['/assets/img/kristallisiert.jpg', 'Der Honig hat in den Waben schon kristallisiert'],
+    ['/assets/img/refraktometer.jpg', 'Mit dem Refraktometer wird der Feuchtigkeitsgehalt bestimmt']
+  ]
+
+  assets_juli = [
+    ['/assets/img/flugloch.jpg', 'Bienen mit der Beute vor dem Flugloch'],
+    ['/assets/img/varoafalle.jpg', 'Baurahmen mit Drohnenbrut als Varroafalle'],
+    ['/assets/img/sonnenwachsschmelze2.jpg', 'Das Wachs fängt an zu schmelzen'],
+    ['/assets/img/distel.jpg', 'Distel vor Sonnenuntergang'],
+    ['/assets/img/johannisbeere.jpg', 'Johannisbeere'],
+    ['/assets/img/kirsche.jpg', 'Kirsche'],
+    ['/assets/img/kindergarten1.jpg', 'Der Kindergarten ist zu Besuch'],
+    ['/assets/img/kindergarten2.jpg', 'Der Kindergarten ist zu Besuch']
+  ]
+
+  assets_august = [
+    ['/assets/img/auffuetterung.jpg', 'Auffütterung nach der Honigentnahme'],
+    ['/assets/img/florian1.jpg', 'Sonnenuntergang am Florian'],
+    ['/assets/img/florian2.jpg', 'Sonnenuntergang am Florian']
+  ]
   
+  assets_september = [
+    ['/assets/img/abfuellen.jpg', 'Der Honig wird in die Gläser abgefüllt'],
+    ['/assets/img/panorama.jpg', 'Panorama über Großbettlingen'],
+    ['/assets/img/waldtag.jpg', 'Beim Waldtag']
+  ]
+  
+  assets_oktober = [
+    ['/assets/img/wachs.jpg', 'Wachsproduktion in verschiedenen Reiheitsgraden druch Klärung'],
+    ['/assets/img/schneeball1.jpg', 'Schneeballstrauch'],
+    ['/assets/img/schneeball2.jpg', 'Schneeballfrucht'],
+    ['/assets/img/weissdornfrucht.jpg', 'Weißdornfrucht'],
+    ['/assets/img/waldpilze1.jpg', 'Waldpilze'],
+    ['/assets/img/baumpilze.jpg', 'Baumpilze']
+  ]
+
+  assets_november = [
+    ['/assets/img/kerzen.jpg', 'Stumpenkerze und Weihnachtsbaumkerze'],
+    ['/assets/img/seifen.jpg', 'Evas Seifen enthalten auch Bienenwachs und Honig'],
+    ['/assets/img/walnusshonig.jpg', 'Walnusshonig'],
+  ]
+
+  assets_dezember = [
+    ['/assets/img/wintertraube1.jpg', 'Bienen in der Wintertraube'],
+    ['/assets/img/wintertraube2.jpg', 'Bienen in der Wintertraube'],
+    ['/assets/img/grafenberg.jpg', 'Blick zum Grafenberg'],
+    ['/assets/img/nistkasten.jpg', 'Für die Vögel müssen die Nistkästen gereinigt werden'],
+    ['/assets/img/neuffen.jpg', 'Blick vom Neuffen über Jusi bis zum Grafenberg'],
+    ['/assets/img/wintertag_fruehling.jpg', 'Wintertag der auch ein Frühling sein könnte'],
+    ['/assets/img/bienen_schnee.jpg', 'Bienenkästen im Schnee'],
+    ['/assets/img/christrose.jpg', 'Biene auf Christrose an einem milden Dezembertag'],
+    ['/assets/img/schal.jpg', 'Auch Bienen ist es kalt']
+  ]
+
 
   ngOnInit(): void {
     let active = 0;
