@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NgbdModalComponent } from './shared/order/order.component';
+import { NgbdModalContent } from './shared/order/order.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
@@ -19,7 +20,8 @@ import { ExamplesModule } from './examples/examples.module';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    NgbdModalComponent
+    NgbdModalComponent,
+    NgbdModalContent
   ],
   imports: [
     BrowserModule,

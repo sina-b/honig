@@ -1,6 +1,8 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import { NgForm, FormsModule } from "@angular/forms";
+import { NgForm } from "@angular/forms";
+import 'smtp.js'; //file path may change → 
+declare let Email: any;
 
 @Component({
     selector: 'app-modal-content',
@@ -8,25 +10,20 @@ import { NgForm, FormsModule } from "@angular/forms";
     styleUrls: ['./order.component.scss']
 })
 
-export class NgbdModalContent implements OnInit {
+export class NgbdModalContent {
     @Input()
     name;
-    email;
-    message;
   
     constructor(
         public activeModal: NgbActiveModal
         ) {}
-  
-    ngOnInit() {
-    }
     
-    onSubmit(f: NgForm) {  
-        console.log('you submitted value:', f);
+    onSubmit(f: NgForm) {
+        const input = f.value
+        console.log(input.name);
+        console.log(input.email);
+        console.log(input.message);
     }
-
-    val: string = ''; 
-
   }
 
 
