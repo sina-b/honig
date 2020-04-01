@@ -76,6 +76,19 @@
                     </ng-template>
                 </ngb-carousel>
             </div>
+            <div id="mai" class="card page-carousel ghost">
+                <h5>
+                    Bienen und Natur im Mai
+                </h5>
+                <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+                    <ng-template ngbSlide *ngFor="let asset of assets_mai; index as i">
+                        <img [src]="asset[0]" alt="assets_mai[i][1]">
+                        <div class="carousel-caption">
+                            <h3>{{assets_mai[i][1]}}</h3>
+                        </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
         </div>
     </div>
 </div>

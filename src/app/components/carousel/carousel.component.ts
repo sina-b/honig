@@ -42,8 +42,44 @@ export class CarouselComponent implements OnInit {
   ]
 
   assets_april = [
+    ['/assets/img/imkerei.jpg', 'Die Imkerei im April'],
     ['/assets/img/brutwabe_april.jpg', 'Brutwabe im April'],
-    ['/assets/img/wabe_april.jpg', 'Baurahmen für Drohnenbrut']
+    ['/assets/img/wabe_april.jpg', 'Baurahmen für Drohnenbrut'],
+    ['/assets/img/brut.jpg', 'Verdeckelte  Brut mit etwas Pollen'],
+    ['/assets/img/koeniginnen.jpg', 'Brutwabe mit Königinnenzellen'],
+    ['/assets/img/wabe_raps.jpg', 'Honigwabe vor Rapsfeld'],
+    ['/assets/img/fruehling.jpg', 'Bienenflug im Frühling'],
+    ['/assets/img/pollen.jpg', 'Pollen wird gesammelt'],
+    ['/assets/img/pause.jpg', 'Mach mal Pause'],
+    ['/assets/img/bienenstand.jpg', 'Bienenstand'],
+    ['/assets/img/wiese_bienenstand.jpg', 'Die Wiese beim Bienenstand'],
+    ['/assets/img/weide_april.jpg', 'Weide im April'],
+    ['/assets/img/jusi_april.jpg', 'Es ist Frühling'],
+    ['/assets/img/biene_sw.jpg', 'Close up'],
+    ['/assets/img/fruehling_teich.jpg', 'Frühling am Teich'],
+    ['/assets/img/kirschbaum.jpg', 'Kirschbaumblüte'],
+    ['/assets/img/kirschbluete.jpg', 'Kirschblüte'],
+    ['/assets/img/apfelbluete.jpg', 'Apfelblüte'],
+    ['/assets/img/loewenzahn.jpg', 'Löwenzahn']
+  ]
+
+  assets_mai = [
+    ['/assets/img/bienen_honigwabe.jpg', 'Bienen auf Honigwabe'],
+    ['/assets/img/imkerei_schild.jpg', 'Die Imkerei'],
+    ['/assets/img/teilweise_verdeckelt.jpg', 'Wabe teilweise verdeckelt'],
+    ['/assets/img/schwarmzellen.jpg', 'Es werden Schwarmzellen gebildet'],
+    ['/assets/img/schwarmzellen2.jpg', 'Schwarmzellen ... da kommt Freude auf'],
+    ['/assets/img/voelkerwanderung.jpg', 'Völkerwanderung in den Raps'],
+    ['/assets/img/wachsschmelze.jpg', 'Sonnenwachsschmelze'],
+    ['/assets/img/loewenzahnwiese.jpg', 'Löwenzahnwiese'],
+    ['/assets/img/anflug_loewenzahn.jpg', 'Im Anflug'],
+    ['/assets/img/biene_loewenzahn.jpg', 'Biene auf Löwenzahn'],
+    ['/assets/img/gaensebluemchen.jpg', 'Gänseblümchen'],
+    ['/assets/img/rapsfeld.jpg', 'Rapsfeld'],
+    ['/assets/img/wiesentracht.jpg', 'Wiesentracht'],
+    ['/assets/img/weissdornstrauch.jpg', 'Weißdornstrauch'],
+    ['/assets/img/weissdornbluete.jpg', 'Weißdornblüte'],
+    ['/assets/img/weinstock.jpg', 'Weinstock']
   ]
   
 
