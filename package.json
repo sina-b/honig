@@ -1,10 +1,10 @@
 {
-  "name": "paper-kit-2-angular",
+  "name": "honey-website",
   "version": "1.3.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/creativetimofficial/pk2-angular.git"
+    "url": "https://github.com/sina-b/honig"
   },
   "scripts": {
     "ng": "ng",
