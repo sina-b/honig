@@ -17,7 +17,7 @@ export class NgbdModalContent implements OnInit {
         ) {}
     
     ngOnInit(): void {
-        document.querySelector(".btn-content").innerHTML = 'Senden';
+        document.querySelector('.btn-content').innerHTML = 'Senden';
     }
 
     onSubmit(f: NgForm) {
@@ -33,7 +33,7 @@ export class NgbdModalContent implements OnInit {
             if (regexp.test(input.email) == true) {
                 if (input.message != undefined) {
                     console.log('thank you for your message')
-                    document.querySelector(".btn-content").innerHTML = 'Danke!';
+                    document.querySelector('.btn-content').innerHTML = 'Danke!';
                     btn_submit.classList.add('btn-success');
                     btn_submit.classList.remove('btn-danger');
 
