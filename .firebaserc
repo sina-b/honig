@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "honig-143a7": {
+      "hosting": {
+        "pk2-angular": [
+          "honig-143a7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "honig-143a7"
+  }
+}
