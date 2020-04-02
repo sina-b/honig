@@ -1,8 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from "@angular/forms";
-import 'smtp.js'; //file path may change → 
-declare let Email: any;
 
 @Component({
     selector: 'app-modal-content',
@@ -10,19 +8,54 @@ declare let Email: any;
     styleUrls: ['./order.component.scss']
 })
 
-export class NgbdModalContent {
+export class NgbdModalContent implements OnInit {
     @Input()
     name;
   
     constructor(
-        public activeModal: NgbActiveModal
+        public activeModal: NgbActiveModal,
         ) {}
     
+    ngOnInit(): void {
+        document.querySelector(".btn-content").innerHTML = 'Senden';
+    }
+
     onSubmit(f: NgForm) {
+        let regexp = new RegExp('[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+')
+        let input_name = document.getElementById('input_name')
+        let input_email = document.getElementById('input_email')
+        let input_message = document.getElementById('input_message')
+        let btn_submit = document.getElementById('btn_submit')
+
         const input = f.value
-        console.log(input.name);
-        console.log(input.email);
-        console.log(input.message);
+
+        if (input.name != undefined) {
+            if (regexp.test(input.email) == true) {
+                if (input.message != undefined) {
+                    console.log('thank you for your message')
+                    document.querySelector(".btn-content").innerHTML = 'Danke!';
+                    btn_submit.classList.add('btn-success');
+                    btn_submit.classList.remove('btn-danger');
+
+                    input_message.classList.remove('has-danger');
+                    input_name.classList.remove('has-danger');
+                    input_email.classList.remove('has-danger');
+                    f.form.disable()
+                }
+                else {
+                    input_message.classList.add('has-danger');
+                    console.log('no message')
+                }
+            }
+            else {
+                input_email.classList.add('has-danger');
+                console.log('email invalid')
+            }
+        }
+        else {
+            input_name.classList.add('has-danger');
+            console.log('name required')
+        }
     }
   }
 
