@@ -58,7 +58,8 @@ export class CarouselComponent implements OnInit {
     ['/assets/img/kirschbaum.jpg', 'Kirschbaumblüte'],
     ['/assets/img/kirschbluete.jpg', 'Kirschblüte'],
     ['/assets/img/apfelbluete.jpg', 'Apfelblüte'],
-    ['/assets/img/loewenzahn.jpg', 'Löwenzahn']
+    ['/assets/img/loewenzahn.jpg', 'Löwenzahn'],
+    ['/assets/img/bienen_wasser.jpg', 'Die Bienen haben Durst']
   ]
 
   assets_mai = [
