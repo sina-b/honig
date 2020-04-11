@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {  NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {  NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { NgForm } from "@angular/forms";
-
-import { AngularFireModule } as firebase from '../../app.module';
-import '@firebase/firestore';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
     selector: 'app-modal-content',
@@ -15,8 +13,8 @@ export class NgbdModalContent implements OnInit {
 
     constructor(
         public activeModal: NgbActiveModal,
+        public firestore: AngularFirestore
         ) {
-
         }
     
     ngOnInit(): void {
@@ -24,7 +22,6 @@ export class NgbdModalContent implements OnInit {
     }
 
     onSubmit(f: NgForm) {
-        const db = firebase.firestore();
         let regexp = new RegExp('[a-zA-Z0-9_\\.\\+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-\\.]+')
         let input_name = document.getElementById('input_name')
         let input_email = document.getElementById('input_email')
@@ -45,7 +42,7 @@ export class NgbdModalContent implements OnInit {
                     input_email.classList.remove('has-danger');
                     f.form.disable()
 
-                    db.collection("mail").add({
+                    this.firestore.collection("mail").add({
                         to: ["brandstetter.sina@gmail.com"],
                         message: {
                             subject: "Neue Bestellung",
