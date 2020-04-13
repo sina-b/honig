@@ -1,5 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { ImageUrlService } from 'app/services/imageUrl.service';
 
 @Component({
     selector: 'app-components',
@@ -8,7 +9,10 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     ngb-progressbar {
         margin-top: 5rem;
     }
-    `]
+    `],
+    providers: [
+        ImageUrlService
+    ]
 })
 
 export class ComponentsComponent implements OnInit {
@@ -19,7 +23,10 @@ export class ComponentsComponent implements OnInit {
     focus2;
     date: {year: number, month: number};
     model: NgbDateStruct;
-    constructor( private renderer : Renderer2) {}
+    constructor( 
+        private renderer : Renderer2,
+        private imageUrlService: ImageUrlService) {}
+
     isWeekend(date: NgbDateStruct) {
         const d = new Date(date.year, date.month - 1, date.day);
         return d.getDay() === 0 || d.getDay() === 6;
@@ -41,5 +48,4 @@ export class ComponentsComponent implements OnInit {
             });
         }
     }
-
 }

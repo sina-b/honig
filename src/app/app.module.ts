@@ -6,12 +6,15 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NgbdModalComponent } from './shared/order/order.component';
 import { NgbdModalContent } from './shared/order/order.component';
+
+import { ImageUrlService } from './services/imageUrl.service'
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
@@ -35,9 +38,12 @@ import { environment } from '../environments/environment';
     ExamplesModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AngularFireStorageModule
   ],
-  providers: [],
+  providers: [
+    ImageUrlService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
