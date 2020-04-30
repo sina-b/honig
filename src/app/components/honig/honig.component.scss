@@ -1,17 +1,5 @@
-img {
-    float: right;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-.embedded-img{
-    height: auto;
-    width: 40%
-}
-
-figcaption {
-  color: rgb(66, 65, 65);
-  font: smaller sans-serif;
-  text-align: center;
+.embedded-img {
+  float: right;
+  width: 40%;
+  height: auto;
 }
