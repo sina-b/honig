@@ -5,11 +5,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
 import { ImpressumComponent } from './examples/impressum/impressum.component';
+import { SachkundenachweisComponent } from './examples/sachkundenachweis/sachkundenachweis.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
-    { path: 'impressum',     component: ImpressumComponent }
+    { path: 'impressum',     component: ImpressumComponent },
+    { path: 'sachkunde',     component: SachkundenachweisComponent }
 ];
 
 @NgModule({

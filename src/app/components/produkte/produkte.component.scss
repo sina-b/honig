@@ -3,15 +3,17 @@
     float: right;
     width: 40%;
     height: auto;
+    padding-bottom: 20px;
   }
 
 .left {
   float: left;
   width: 40%;
   height: auto;
+  padding-bottom: 20px;
 }
 
 .products{
-  padding-top: 0px;
-  padding-bottom: 60%;
+  display: inline-block;
+  padding-bottom: 20px;
 }

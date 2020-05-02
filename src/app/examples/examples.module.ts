@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ImpressumComponent } from './impressum/impressum.component';
+import { SachkundenachweisComponent } from './sachkundenachweis/sachkundenachweis.component';
 
 @NgModule({
     imports: [
@@ -12,7 +13,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
         NgbModule,
     ],
     declarations: [
-        ImpressumComponent
+        ImpressumComponent,
+        SachkundenachweisComponent
     ]
 })
 export class ExamplesModule { }
