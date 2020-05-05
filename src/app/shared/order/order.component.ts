@@ -26,7 +26,7 @@ export class NgbdModalContent implements OnInit {
         let input_name = document.getElementById('input_name')
         let input_email = document.getElementById('input_email')
         let input_message = document.getElementById('input_message')
-        let btn_submit = document.getElementById('btn_submit')
+        let btn_submit = <HTMLInputElement> document.getElementById('btn_submit')
 
         const input = f.value
 
@@ -36,6 +36,7 @@ export class NgbdModalContent implements OnInit {
                     document.querySelector('.btn-content').innerHTML = 'Danke!';
                     btn_submit.classList.add('btn-success');
                     btn_submit.classList.remove('btn-danger');
+                    btn_submit.disabled = true;
 
                     input_message.classList.remove('has-danger');
                     input_name.classList.remove('has-danger');

@@ -10,19 +10,49 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <li class="nav-item" *ngIf="!isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Zurück" data-placement="bottom" href="/#/home">
+                        <p class="d-lg-none">Zurück</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Regionaler Honig" data-placement="bottom" href="#RegionalerHonig">
+                        <p class="d-lg-none">Regionaler Honig</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Imkerei" data-placement="bottom" href="#Imkerei">
+                        <p class="d-lg-none">Imkerei</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Produkte" data-placement="bottom" href="#Produkte">
+                        <p class="d-lg-none">Produkte</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Jahresverlauf" data-placement="bottom" href="#Jahresverlauf">
+                        <p class="d-lg-none">Jahresverlauf</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="isHome()">
+                    <a (click)="sidebarToggle()" class="nav-link" rel="tooltip" title="Honig" data-placement="bottom" href="#Honig">
+                        <p class="d-lg-none">Warum Honig?</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="Facebook" data-placement="bottom" href="https://www.facebook.com/armin.brandstetter.7" target="_blank">
                         <i class="fa fa-facebook-square"></i>
                         <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="Instagram" data-placement="bottom" href="https://www.instagram.com/arminbrandstetter/" target="_blank">
                         <i class="fa fa-instagram"></i>
                         <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isHome()">
+                <li class="nav-item">
                     <app-order-component></app-order-component>
                 </li>
             </ul>
