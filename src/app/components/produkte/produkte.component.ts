@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageUrlService } from 'app/services/imageUrl.service';
 
 @Component({
   selector: 'app-produkte',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdukteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private imageUrlService: ImageUrlService
+  ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.setImage('sommer_fluessig')
+    this.setImage('sommer_cremig')
+    this.setImage('fruehling_fluessig')
+    this.setImage('fruehling_cremig')
+  }
+
+  setImage(filename) {
+    this.imageUrlService.getImageUrl(filename)
+      .then(function(res) {
+          document.getElementById(filename).setAttribute('src', res);
+      })
+      .catch(function(rej) {
+          console.log(rej)
+      });
   }
 
 }
