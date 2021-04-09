@@ -16,7 +16,7 @@ export class NgbdModalContent implements OnInit {
         public firestore: AngularFirestore
         ) {
         }
-    
+
     ngOnInit(): void {
         document.querySelector('.btn-content').innerHTML = 'Senden';
     }
@@ -41,13 +41,33 @@ export class NgbdModalContent implements OnInit {
                     input_message.classList.remove('has-danger');
                     input_name.classList.remove('has-danger');
                     input_email.classList.remove('has-danger');
+                    f.form.reset()
                     f.form.disable()
 
                     this.firestore.collection("mail").add({
-                        to: ["brandstetter.sina@gmail.com"],
+                        to: ["armin.brandstetter@gmail.com"],
                         message: {
                             subject: "Neue Bestellung",
                             html: `Neue Nachricht von ${input.name}, ${input.email}: ${input.message}`
+                        }
+                    })
+                    .then(function(docRef) {
+                        console.log("Document written with ID: ", docRef.id);
+                    })
+                    .catch(function(error) {
+                        console.error("Error adding document: ", error);
+                    });
+
+                    this.firestore.collection("mail").add({
+                        to: [input.email],
+                        message: {
+                            subject: "Bestellbestätigung Honig",
+                            html: `Hallo ${input.name}, <br>
+                                    vielen Dank für Ihre Bestellung! <br>
+                                    Wir melden uns bei Ihnen. <br>
+                                    <br>
+                                    Viele Grüße, <br>
+                                    Imkerei Brandstetter`
                         }
                     })
                     .then(function(docRef) {

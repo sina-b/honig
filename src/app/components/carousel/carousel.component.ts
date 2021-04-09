@@ -40,9 +40,9 @@ export class CarouselComponent implements OnInit {
   }
 
   loadAssetList(month) {
-    let assetList = []
+    const assetList: any = []
     this.firestore.collection(month).get().toPromise().then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
+      querySnapshot.forEach((doc: any) => {
           assetList.push([doc.data().img, doc.data().text])
       });
     });
